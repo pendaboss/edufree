@@ -1,279 +1,294 @@
-@import url(‘https://fonts.googleapis.com/css?family=Poppins’);
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edufree</title>
 
-}
-body{
-    font-family: 'Poppins', sans-serif;
-}
-h1{
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: rgb(35,35,85);
-}
-span{
-    font-size: .9rem;
-    color: #757373;
-}
-h6{
-    font-size: 1.1rem;
-    color: rgb(24,24,49);
-}
-/* navigation */
-nav{
-    position: fixed; 
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1vw 10vw;
-    align-items: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0.15);
-}
-nav img{
-    width: 80px;
-    cursor: pointer;
-}
-nav .navigation ul{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-nav .navigation ul li{
-    list-style: none;
-    margin-left: 30px;
-
-}
-nav .navigation ul li a {
-text-decoration: none;
-color: rgb(21,21,100);
-font-size: 16px;
-font-weight:500;
-transition: 0.3s ease;
-}
-nav .navigation ul li a:hover{
-    color: #FDC93B;
-}
-/* home */
-
-#Home{
-
-background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url(./taat.jpg);
-width: 100%;
-height: 100vh;
-background-size: cover;
-background-position: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-
-}
-#Home h2{
-    color: #fff;
-    font-size: 2.2rem;
-    letter-spacing: 1px;
-}
-#Home p{
-    width: 50%;
-
-    color: #fff;
-    font-size: 0.9rem;
-    line-height: 25px;
-}
-#Home .btn{
-    margin-top: 30px;
-}
-#Home a{
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding: 13px 35px;
-    background-color: #fff;
-    font-weight: 600;
-    border-radius: 5px;
-
-}
-#Home a.blue{
-    color: #fff;
-    background: rgb(21, 21, 100);
-    transition: 0.3s ease;
-}
-#Home a.blue:hover{
-    color: rgb(21, 21, 100);
-    background: #fff
-}
-#Home a.yellow{
-    color: #fff;
-    background: #FDC938;
-    transition: 0.3s ease;
-}
-#Home a.yellow:hover{
-    color: #FDC938;
-    background: #fff;
-}
-/* features */
-.features {
-    padding: 3vw 8vw 0 8vw;
-    text-align: center;
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+     <img src="./download.svg" alt="">
+     <div class="navigation">
+         <ul>
+            <i id="menu-close" class="fas fa-times"></i>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">courses</a></li>
+             <li><a href="#">contact</a></li>
+             <li><a href="#">blog</a></li>
+         </ul>
+      <img id="menu-btn" src="./menu.png" alt="">
+     </div>
+    </nav>
+    <!-- home -->.
+    <section id="Home">
+        <h2>Learning is Free just you have to know the Path</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero quae veniam quas sit perspiciatis impedit a quo inventore voluptas! Voluptate adipisci quia neque facere ipsum praesentium iure excepturi voluptates!</p>
+        <div class="btn">
+            <a class="blue" href="#">Learn More</a>
+            <a class="yellow" href="#">visit Courses</a>
+        </div>
+    </section>
+    <!-- feature -->
+    <section class="features">
+<h1>Knowledgable Features</h1>
+<p>so have fun click on any course and learn  </p>
+
+<div class="fea-base">
+    <div class="fea-box">
+        
+<i class="fas fa-brain"></i>
+<h3>know your potential </h3>
+<p>tell me a quote</p>
+</div>
     
-}
-
-.features .fea-base{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr) );
-    grid-gap:1rem;
-    font-size: 1.4rem;
-   position: relative;
-   margin: 10px;
-
-
-}
-.features .fea-box{
-    background-color: #f9f9ff;
-    text-align:start;
-}
+    <div class="fea-box">
+            
+           <i class="fas fa-laptop-code"></i>
+<h3>Learn Appropriate  </h3>
+<p>tell me a quote</p>
+</div>
+ 
    
-    
+    <div class="fea-box">
+        
+        <i class="fas fa-user-graduate"></i>
+<h3>Expertise Yourself </h3>
+<p>tell me a quote</p>
+
+    </div>
+</div>
+    </section>
+    <!-- courses -->
+    <section id="course" >
+        <h1>Our Popular courses </h1>
+        <p>so have fun click on any course and learn </p>
+ <div class="course-box">
+     <div class="courses"> 
+         <img src="./python.jpg" alt="">
+         <div class="details">
+             <span>updated this month</span>
+             <h6> python proggraming</h6>
+             <div class="star">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>  
+                 <span>(239) </span>
+             </div>
+         </div>
+        
+     </div>
+     <div class="courses"> 
+        <img src="./code.jpg" alt="">
+        <div class="details">
+            <span>updated this month</span>
+            <h6> coding daily</h6>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>  
+                <span>(239) </span>
+            </div>
+        </div>
+       
+    </div>
+    <div class="courses"> 
+        <img src="./hack.jpg" alt="">
+        <div class="details">
+            <span>updated last month</span>
+            <h6> Ethical Hacking</h6>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                  
+                
+                <span>(139)</span>
+            </div>
+        </div>
+       
+    </div>
+    <div class="courses"> 
+        <img src="./ai.jpg" alt="">
+        <div class="details">
+            <span>updated this month</span>
+            <h6> learn AI </h6>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>  
+                <span>(32) </span>
+            </div>
+        </div>
+       
+    </div>
+    <div class="courses"> 
+        <img src="./web.jpg" alt="">
+        <div class="details">
+            <span>updated this month</span>
+            <h6> Webdesigning full course</h6>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>  
+                <span>(322) </span>
+            </div>
+        </div>
+       
+    </div>
+    <div class="courses"> 
+        <img src="./digital.jpg" alt="">
+        <div class="details">
+            <span>updated this month</span>
+            <h6> digital Marketing Full Course</h6>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>  
+                <span>(212) </span>
+            </div>
+        </div>
+       
+    </div>
+    <div class="courses"> 
+        <img src="./hack2.jpg" alt="">
+        <div class="details">
+            <span>updated this week</span>
+            <h6> Advanced Hacking Course</h6>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>  
+                <span>(20) </span>
+            </div>
+        </div>
+       
+    </div>
+ </div>
+    </section>
+    <!-- Registration -->
+    <section id="registration">
+         <div class="remainder">
+             <p>Get some Advanced tools and other materials</p>
+             <h1>Register to Get it</h1>
+             <div class="time">
+                 <div class="date">
+                     18 <br> Days
+                 </div>
+                 <div class="date">
+                   23 <br>Hours
+                </div>
+                <div class="date">
+                    06 <br> Minutes
+                </div>
+                <div class="date">
+                    58 <br> Seconds
+                </div>
+             </div>
+         </div>
 
 
-.features .fea-box h3{
-    font-size: 1.2rem;
-    font-weight: 600;
-color: rgba(46,46,59);
-padding: 13px 0 7px 0;
-}
-.features .fea-box p{
-    font-size: 1rem;
-    font-weight: 400;
-color: rgba(70,70,87);
+         <div class="form">
+            <h3>Create Free Account</h3>
+            <input type="text" placeholder="Name" name="" id="">
+            <input type="text" placeholder="Email Address" name="" id="">
+            <input type="text" placeholder="Phone Number" name="" id="">
+            <div class="btn">
+                <a class="yellow" href="#">Submit</a>
+           
+            </div>
+         </div>
+    </section>
+    <!-- profle -->
 
-}
+    <section id="experts">
+        <h1>we the bros</h1>
+        <p>any question or you want us to upload any course feel free to dm</p>
+        <div class="expert-box">
+            <div class="profile">
+                <img src="./AvatarMaker.webp" alt="">
+                <h6>Pendaboss</h6>
+                <p>webdevloper,Hacker,a Teacher,Brother for You all</p>
+                <div class="pro-links">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="./AvatarMaker(1).png" alt="" />
+                <h6>Deepsharma</h6>
+               <p>webdevloper,lazy asshole,Brother for You all</p>
+                <div class="pro-links">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            
+            
+        </div>
 
-/* courses */
-#course{
-    padding:8vw 8vw 0 8vw ;
-text-align:center;
-}
-#course .course-box{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr) );
-    grid-gap:1rem;
-    font-size: 1.4rem;
-   position: relative;
-   margin: 10px;
-}
-
-#course .courses{
-    text-align: start;
-    background: #f9f9ff;
-    height: 100%;
-}
-#course .courses img{
-    width: 100%;
-    height: 60%;
-    background-size: cover;
-    background-position: center;
-}
- #course .courses .details{
-     padding: 15px 15px 0 15px;
- }
- #course .courses .details i{
-     color: #FDC938;
-     font-size: .9rem;
-
- }
-
- /* Registration */
- #registration{
-     padding: 6vw 8vw 6vw 8vw;
-     background-image:linear-gradient(rgba(39, 61, 160, 0.5),rgba(81,91,233,0.5)),url(./sign.jpg);
-height: 100%;
-     width: 100%;
-     background-size: cover;
-     background-position: center;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
- #registration .remainder{
-     color: #fff;
-
- }
- #registration .remainder h1{
-    color: #fff;
-
-}
-#registration .remainder .time{
-    display: flex;
-     margin-top: 40px;
-}
-#registration .remainder .time .date{
-    text-align: center;
-    padding: 13px 30px;
-    background: rgba(255,255,255,0.25);
-     backdrop-filter: blur(4px);
-     box-shadow:0 8px 32px 0 rgba(31, 38, 135, 0.37) ;
-     border-radius: 10px;
-     margin: 0 5px 8px 5px;
-     border: 1px solid rgb( 255 , 255, 255,0.18);
-font-size: 1.1rem;
-font-weight: 600;
-}
-#registration .form{
-background: #fff;
-border-radius: 8px;
-display: flex;
-flex-direction: column;
-padding: 40px;
-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) ;
-}
-#registration .form input{
-    margin: 15px 0;
-    padding: 10px 10px;
-    border: 1px solid rgb(84, 40, 241, );
-    outline: none;
-}
-#registration .form .btn{
-    margin-top: 20px;
-    
-}
-#registration .form a.yellow{
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding: 13px 35px;
-    color: #fff;
-    background: #FDC938;
-    transition: 0.3s ease;
-    border-radius: 3px;
-}
-#registration .form a.yellow:hover{
-    color: #FDC938;
-    background: #fff;
-}
-/* Experts */
+    </section>
+    <footer>
+        <div class="footer-col">
+          <h3>Top product</h3>
+          <li>manage</li>
+          <li>manage</li>
+          <li>manage</li>
+          <li>manage</li>
+        </div><div class="footer-col">
+            <h3>Top product</h3>
+            <li>manage</li>
+            <li>manage</li>
+            <li>manage</li>
+            <li>manage</li>
+          </div>
+          <div class="footer-col">
+            <h3>Top product</h3>
+            <li>manage</li>
+            <li>manage</li>
+            <li>manage</li>
+            <li>manage</li>
+            
+          </div>
+<div class="footer-col">
+    <h3>Newsletter</h3>
+    <p>we only send notiication s</p>
+    <div class="subscribe">
+        <input type="text" placeholder="Your Email adress">
+        <a href="#" class="yellow" >Subscribe</a>
+    </div>
+</div>
 
 
-#experts{
-    padding: 8vw 8vw 0 8vw;
-    text-align: center;
-}
-#experts .expert-box{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr) );
-    grid-gap:1rem;
-    font-size: 1.4rem;
-   position: relative;
-   margin: 10px;
-   
-}
-#experts .profile img{
-    vertical-align: middle;
-    width: 70px;
-    height: auto;
-   border-radius: 70%;
-}
+    </footer>
+    <div class="copyright">
+        <p>Copyright 02021 All rights reserved: By Pendasquad</p>
+        <div class="pro-links">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-github"></i>
+        </div>
+    </div>
+    <script>
+         $('#menu-btn').click(function(){
+$('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function(){
+$('nav .navigation ul').removeClass('active')
+        });
+
+        
+    </script>
+</body>
+</html> 
